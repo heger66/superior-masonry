@@ -1,0 +1,282 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@300:400&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    text-align: center;
+    font-family: 'Nunito', sans-serif;
+    font-weight: 300;
+}
+
+p {
+    font-weight: 400;
+    line-height: 1.6;
+}
+/* HEADER */ 
+header {
+    position: fixed;
+    width: 100%;
+    overflow: hidden;
+    top: 0;
+    background-color: rgb(2,72,151);
+    align-items: right;
+    z-index: 1;
+}
+
+.nav-bar-lg ul{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    float: right;
+}
+
+nav li {
+    display: inline-block;
+    margin: .7em;
+    margin-top: 1.3em;
+    margin-bottom: 1.3em;
+}
+
+nav a{
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    padding: .2em;
+    font-family: 'Roboto', sans-serif;
+    font-size: 20px;
+}
+
+.nav-bar-sm ul{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    float: left;
+}
+
+.sm-nav-right-container {
+    float: right;
+}
+
+@media screen and (max-width: 750px) {
+    .nav-bar-lg {
+        display: none;
+    }
+}
+
+@media screen and (min-width: 751px) {
+    .nav-bar-sm {
+        display: none;
+    }
+}
+
+.box-shadow-menu {
+    position: relative;
+    padding-left: 1em;
+}
+.box-shadow-menu:before {
+    content: "";
+    position: absolute;
+    left: -1em;
+    margin-top: .21em;
+    width: 1.75em;
+    height: 0.15em;
+    background: rgb(255, 255, 255);
+    box-shadow: 
+        0 0.5em 0 0 rgb(255, 255, 255),
+        0 1em 0 0 rgb(255, 255, 255);
+    border-radius: 1px;
+
+}
+
+/* HOME CONTENT */
+.home {
+    margin-top: 0;
+    height: 1000px;
+}
+.home::before{
+    content: "";
+    position: absolute;
+    top: 0; left: 0;
+    width: 100%; height: 1000px;
+    background-image: url("/assets/thumbnail_IMG_5703.jpg");
+    background-size: cover;
+    background-position: center;
+}
+
+.home-inside{
+    position: relative;
+    margin: auto;
+    width: 40%;
+    min-width: 500px;
+    max-width: 700px;
+    padding: 2em;
+    
+    position: relative;
+    color: white;
+    font-weight: 100;
+    margin-top: 8em;
+} 
+
+.home-inside h1 {
+    font-size: 2em;
+}
+
+.home-hr {
+    border: 0;
+    height: 1px;
+    width: 80%;
+    min-width: 400px;
+    background-image: linear-gradient(to right, rgba(105, 105, 105, 0), rgb(255, 255, 255), rgba(105, 105, 105, 0));
+}
+
+.home-logo {
+    height: 10em;
+}
+
+.home-button {
+    position: relative;
+    margin-top: 30px;
+    background-color: rgba(27,27,27,0.678);
+    transition: rgba(27,27,27,0.678);
+    color: white;
+    border: 2px solid white;
+    border-radius: 10px;
+    padding: 10px 40px;
+    font-size: 1em;
+}
+
+.home-button:hover{
+    background-color: rgb(255, 255, 255);
+    color: black;
+    border: 2px solid white;
+    border-radius: 8px;
+    transition: 350ms
+}
+
+.home-button:not(:hover) {
+    background-color: rgba(44, 44, 44, 0.678);
+    color: white;
+    transition: 350ms
+}
+
+/*WHAT WE DO*/
+
+#wwd-container {
+    position: relative;
+    margin-top: 1em;
+    padding-top: 3em;
+    color: rgb(27, 27, 27);
+    background-color: white;
+}
+
+#wwd-container hr {
+    border: 0;
+    height: 1px;
+    width: 30%;
+    min-width: 300px;
+    background-image: linear-gradient(to right, rgba(105, 105, 105, 0), rgb(0, 0, 0), rgba(105, 105, 105, 0));
+}
+
+.wwd-heading {
+    font-size: 35px;
+}
+
+.columns {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+    padding: 1em;
+}
+
+.column {
+    flex: 33.33%;
+    padding-left: 3em;
+    padding-right: 3em;
+    min-width: 250px;
+
+}
+
+.icons {
+    padding-top: 1em;
+    color: rgb(207,145,7);
+    font-size: 3em;
+}
+
+/********ABOUT US********/
+.about-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+
+}
+
+
+
+.left-container {
+    flex-basis: 40%;
+    min-width: 300px;
+    background-color: rgb(2,72,151);
+    color: white;
+    text-align: left;
+    padding-right: 3em;
+    padding-top: 2em;
+    padding-bottom: 2em;
+}
+.left-container h2 {
+
+    color: rgb(207,145,7);
+}
+
+.left-container ul {
+    list-style-type: none;
+}
+
+.right-container {
+    flex-basis: 60%;
+    min-width: 300px;
+    padding-left: 8em;
+    padding-right: 8em;
+    background-color: rgb(230, 230, 230);
+}
+
+.right-container hr {
+    border: 0;
+    height: 1px;
+    width: 50%;
+    min-width: 300px;
+    background-image: linear-gradient(to right, rgba(105, 105, 105, 0), rgb(0, 0, 0), rgba(105, 105, 105, 0));
+}
+.right-container h1 {
+    font-size: 35px;
+    padding-top: 1em;
+}
+
+.about-image-container {
+
+}
+
+.checkmark-list {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.checkmark {
+    padding-right: 3em;
+    align-self: flex-start;
+}
+@media screen and (max-width: 980px) {
+
+    .left-container, .right-container{
+        flex:1;
+        padding: 2em;
+    }
+}   
