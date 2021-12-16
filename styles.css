@@ -107,7 +107,8 @@ nav a:not(:hover) {
 /* HOME CONTENT */
 .home {
     margin-top: 0;
-    height: 1000px;
+    height: 850px;
+    background-color: red;
 }
 .home::before{
     content: "";
@@ -182,6 +183,7 @@ nav a:not(:hover) {
 /*WHAT WE DO*/
 
 #wwd-container {
+    padding-top: 3.5em;
     position: relative;
     color: rgb(27, 27, 27);
     background-color: white;
@@ -219,6 +221,10 @@ nav a:not(:hover) {
     padding-top: 1em;
     color: rgb(207,145,7);
     font-size: 3em;
+}
+
+#what-we-do {
+    background-color: red;
 }
 
 /********ABOUT US********/
