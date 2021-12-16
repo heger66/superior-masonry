@@ -26,7 +26,6 @@ header {
     overflow: hidden;
     top: 0;
     background-color: rgb(2,72,151);
-    background-color: red;
     align-items: right;
     z-index: 1;
 }
@@ -51,6 +50,16 @@ nav a{
     padding: .2em;
     font-family: 'Roboto', sans-serif;
     font-size: 20px;
+}
+
+nav a:hover {
+    color: rgb(207,145,7);
+    transition: 0.3s;
+}
+
+nav a:not(:hover) {
+    color: white;
+    transition: .3s;
 }
 
 .nav-bar-sm ul{
@@ -113,15 +122,19 @@ nav a{
 .home-inside{
     position: relative;
     margin: auto;
-    width: 40%;
-    min-width: 500px;
+    width: 50%;
+    min-width: 400px;
     max-width: 700px;
-    padding: 2em;
-    
+    padding: 2em;    
     position: relative;
     color: white;
     font-weight: 100;
     margin-top: 8em;
+    background-color: rgba(0, 0, 0, 0.678);
+    border: 3px solid white;
+    border-radius: 5px;
+
+    
 } 
 
 .home-inside h1 {
@@ -170,8 +183,6 @@ nav a{
 
 #wwd-container {
     position: relative;
-    margin-top: 1em;
-    padding-top: 3em;
     color: rgb(27, 27, 27);
     background-color: white;
 }
@@ -258,10 +269,6 @@ nav a{
 .right-container h1 {
     font-size: 35px;
     padding-top: 1em;
-}
-
-.about-image-container {
-
 }
 
 .checkmark-list {
