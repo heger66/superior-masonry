@@ -26,6 +26,7 @@ header {
     overflow: hidden;
     top: 0;
     background-color: rgb(2,72,151);
+    background-color: red;
     align-items: right;
     z-index: 1;
 }
