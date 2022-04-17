@@ -25,7 +25,7 @@ header {
     width: 100%;
     overflow: hidden;
     top: 0;
-    background-color: rgba(0, 0, 0, 0.8);
+    background-color: rgba(0, 0, 0, .9);
     align-items: right;
     z-index: 1;
 }
@@ -60,7 +60,7 @@ nav a:hover {
 
 nav a:not(:hover) {
     color: white;
-    transition: .3s;
+    transition: 0.3s;
 }
 
 .nav-bar-sm ul{
@@ -324,11 +324,11 @@ nav a:not(:hover) {
     }
 }   
 
-/********Gallary********/
+/******** OUR WORK ********/
 
 .gallary h1 {
     font-size: 35px;
-    padding-top: 1em;
+    padding-top: 2em;
 }
 .gallary hr {
     border: 0;
