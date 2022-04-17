@@ -416,3 +416,9 @@ nav a:not(:hover) {
 }
 
 .is-hidden {display: none;}
+
+@media screen and (max-width: 900px) {
+    .carousel__nav {
+        display: none;
+    }
+}   
